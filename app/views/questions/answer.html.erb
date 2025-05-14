@@ -7,5 +7,13 @@ variable @answer for the view to display.
 <%# <erb>@question</erb>
 <erb>@answer</erb> %>
 
-<%= @question  %>
-<%= @answer %>
+<div class="container">
+  <% @questions.each_with_index do |question, index| %>
+    <div class="card mt-5">
+        <p><%= question %></p>
+      <p><%= @answers[index -1] %></p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "Ask a new question", ask_path%>

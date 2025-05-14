@@ -1,5 +1,23 @@
+<%# <div class= "container">
 
-<form action="answer" data-turbo="false">
+  <p></p>
+  <form action="answer" data-turbo="false">
   <input type="text" name="question">
-  <input type="submit" value="Ask!">
+  <input type="submit" value="Ask" class= "btn btn-primary">
 </form>
+
+</div> %>
+
+
+<div class= "container">
+  <h1>Stupid Coaching:</h1>
+  <form action="answer" data-turbo="false">
+    <label for="coach" class="form-label"><em>Ask your coach anything</em></label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" name="question" placeholder="Type in your question" id="coach">
+      <div class="input-group-append">
+        <button type="submit" class= "btn btn-primary">Ask</button>
+      </div>
+    </div>
+  </form>
+</div>
