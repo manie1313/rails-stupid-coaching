@@ -11,7 +11,7 @@ variable @answer for the view to display.
   <% @questions.each_with_index do |question, index| %>
     <div class="card mt-5">
         <p><%= question %></p>
-      <p><%= @answers[index -1] %></p>
+      <p><%= @answers[index] %></p>
     </div>
   <% end %>
 </div>
